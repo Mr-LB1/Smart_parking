@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BFEFFF"
+    tools:context=".Reservation_View">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车位信息"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:textColor="#fff"
+                android:text="车位数量"
+                android:textSize="16dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_background"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/parking_car_num"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:textColor="#fff"
+                android:text="停车场名字"
+                android:textSize="16dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_background"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/parkname"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:textColor="#fff"
+                android:text="收费模式"
+                android:textSize="16dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_background"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/charge"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:layout_marginRight="30dp"
+            android:text="预订"
+            android:textSize="25sp"
+            android:id="@+id/btn_Reserve"
+            android:layout_gravity="bottom"
+            tools:ignore="NestedWeights" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            android:layout_weight="1"
+            android:text="返回"
+            android:textSize="25sp"
+            android:id="@+id/btn_back_main"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>

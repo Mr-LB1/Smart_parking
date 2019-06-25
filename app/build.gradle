@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.example.smart_parking"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.android.support:design:28.0.0'
+    implementation files('libs/EventBus.jar')
+    implementation files('libs/galaxy_lite.jar')
+    implementation files('libs/httpmime-4.1.2.jar')
+    implementation files('libs/javapoet-1.9.0.jar')
+    implementation files('libs/protobuf-java-2.3.0-micro.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':onsdk_all')
+    implementation project(':NaviTts')
+    implementation 'com.github.ybq:Android-SpinKit:1.0.1'
+}

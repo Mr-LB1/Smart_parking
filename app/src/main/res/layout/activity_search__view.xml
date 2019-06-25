@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search_View">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/SearchInfo"
+        android:singleLine="true"
+        android:imeOptions="actionNone"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:hint="请输入目的地"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/edit_background"
+        android:layout_marginTop="1dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/cancel"
+        android:drawableLeft="@drawable/aui_icon_search"
+        android:focusable="true" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggestinfo"
+        >
+
+    </ListView>
+</LinearLayout>

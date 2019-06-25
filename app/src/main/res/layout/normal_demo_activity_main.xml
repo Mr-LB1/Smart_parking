@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.github.ybq.android.spinkit.SpinKitView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_centerInParent="true"
+      style="@style/SpinKitView.Circle"
+      app:SpinKit_Color="#000"
+      android:id="@+id/spin_kit"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="导航即将开始"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/spin_kit"/>
+
+</RelativeLayout>

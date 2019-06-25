@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox" tools:targetApi="lollipop">
+        <item name="android:colorControlActivated">#0000FF</item>
+        <item name="android:colorControlNormal">#ffffff</item>
+    </style>
+    <style name="AnimationBottomFade">  
+                <item name="android:windowEnterAnimation">@anim/in_bottomtotop</item>  
+                <item name="android:windowExitAnimation">@anim/out_toptobottom</item>  
+    </style>
+    <style name="MyNavigationDrawerStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

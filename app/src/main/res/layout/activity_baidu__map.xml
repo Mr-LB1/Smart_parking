@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/main_user_icon"
+                android:id="@+id/user_menu"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="城市:"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginStart="50dp" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/city"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="30sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_searchGo"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="请输入目的地"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_background"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/aui_icon_search"
+                android:drawableStart="@drawable/aui_icon_search" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <com.baidu.mapapi.map.MapView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmapView"
+                android:focusable="true"
+                android:clickable="true"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/location"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="60dp"
+                android:clickable="true"
+                android:background="@drawable/icon_location"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:focusable="true"
+                android:layout_marginStart="3dp" />
+            <include
+                layout="@layout/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:headerLayout="@layout/head"
+        app:menu="@menu/menu"
+        android:theme="@style/MyNavigationDrawerStyle"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group1">
+        <item
+        android:id="@+id/show_userinfo"
+        android:title="查看个人资料"
+        />
+        <item
+            android:id="@+id/show_reservation"
+            android:title="查看订单"
+            />
+        <item
+            android:id="@+id/update_safecardinfo"
+            android:title="实名认证"/>
+        <item
+            android:id="@+id/update_password"
+            android:title="修改密码"/>
+        <item
+            android:id="@+id/update_usercarnumber"
+            android:title="修改车牌号"/>
+    </group>
+    <group android:id="@+id/menu_group2">
+        <item
+            android:id="@+id/exit_app"
+            android:title="退出系统"
+            />
+        <item
+            android:id="@+id/logout"
+            android:title="注销"
+            />
+    </group>
+</menu>

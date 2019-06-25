@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">智慧停车系统</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+</resources>
